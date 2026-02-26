@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // JS variablesData value types
+    //1. Primitive data types:Immutable single value and stores in memory.
+    //string===
+    var myName="Abhay"; 
+    console.log("my name is" + myName)
+    console.log(typeof(myName));
+    //number
+    var myMob=68679976967;
+    console.log("my mobile number is" + myMob);
+    console.log(typeof(myMob));
+
+    //Boolean
+    var isMarried=true;
+    console.log(myName + " is married ? " + isMarried);
+    //Undefined
+    var myAdd;
+    console.log(myName + " address is " + myAdd);
+    console.log(typeof(myAdd));
+
+    //null
+    var myEmail=null;
+    console.log(myName + " email is " + myEmail);
+    console.log(typeof(myEmail));
+
+    //bigint
+    var myValue=BigInt(345435345634646456576);
+    console.log(myValue);
+    console.log(typeof(myValue));
+
+    //symbol- unique primitive data value type in JS
+    var val1=Symbol("hello")
+    var val2=Symbol("hello")
+    console.log(val1==val2);
+    console.log(typeof(val1) + " and " + typeof(val2));
+
+    //Reference or Non-Primitive Data Value Types========
+    //object {}- values are defined in paird of key-value
+    let myInfo={
+        name:"Vikas",
+    age:23,
+mob:9876544321,
+eMail:"vikas201@gmail.com",
+isMarried:false,
+address:null,
+branch:"CSE",
+section:18};
+console.log(myInfo.branch);
+//to find the length of object 
+console.log(Object.keys(myInfo).length);
+console.log(myInfo.branch);
+
+//array - collection of any data types in JS
+let studentDetails=["Megha", 24, false, "megha1990@gmail.com", "GZB"];
+console.log(studentDetails[2]);
+console.log(studentDetails.length);
+
+for(i=0;i<studentDetails.length;i++)
+    {
+        console.log(studentDetails[i]);
+    }
+    //function - block of code i.e. perform particuler any task
+    function myCal(){
+        let num1=5;
+        let num2=10;
+        let result=num1+num2;
+        console.log("Addition of two number is " + result);
+        return result;
+    }
+    console.log(myCal());
+
+myCal();
+</script>
+</body>
+</html>

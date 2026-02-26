@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <script>
+        //var declaration
+        var myName="ABES";
+        document.write(myName); 
+        console.log(myName);
+
+        //JS execution (Global and local(block) Scope)
+        function hello(){
+            var Mynum=4645646456; //local or block levev
+            console.log(Mynum);
+
+        }
+        hello();
+
+        //from ES6..let and const
+        //while those declared with let and const do not, though they remain globally accessible within the script.
+        let msg="Welcome";
+        console.log(msg);
+
+        const msg2="Thanks";
+        console.log(msg2);
+    </script>
+</body>
+</html>
