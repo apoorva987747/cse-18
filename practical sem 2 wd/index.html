@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel or Consonant Checker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        input {
+            padding: 10px;
+            width: 150px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: lightgreen;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Vowel or Consonant Checker</h2>
+
+        <input type="text" id="char" maxlength="1" placeholder="Enter a character">
+        <br><br>
+
+        <button onclick="checkCharacter()">Check</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="prac.js">
+       
+    </script>
+
+</body>
+</html>
